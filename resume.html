@@ -1,0 +1,360 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+
+    <title>Chris Reade | Dev | creade@metropho.rs</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+
+    <link rel="stylesheet" type="text/css"
+          href="http://yui.yahooapis.com/2.7.0/build/reset-fonts-grids/reset-fonts-grids.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="resume.css" media="all"/>
+
+</head>
+<body>
+
+<div id="doc2" class="yui-t7">
+<div id="inner">
+
+<div id="hd">
+    <div class="yui-gc">
+        <div class="yui-u first">
+            <h1>Chris Reade</h1>
+
+            <h2>Dev</h2>
+        </div>
+
+        <div class="yui-u">
+            <div class="contact-info">
+                <!-- <h3><a id="pdf" href="#">Download PDF</a></h3> -->
+
+                <h3><a href="mailto:creade@metropho.rs">creade@metropho.rs</a></h3>
+
+                <h3>(248) - 914-0434</h3>
+            </div>
+            <!--// .contact-info -->
+        </div>
+    </div>
+    <!--// .yui-gc -->
+</div>
+<!--// hd -->
+
+<div id="bd">
+    <div id="yui-main">
+        <div class="yui-b">
+
+
+
+
+
+
+            <div class="yui-gf">
+
+                <div class="yui-u first">
+                    <h2>Projects</h2>
+                </div>
+                <!--// .yui-u -->
+
+                <div class="yui-u">
+
+                    <div class="job">
+                        <h2><a href="http://metropho.rs">Metropho.rs</a></h2>
+
+                        <h4>2011</h4>
+
+                        <p>Mapping geographic metaphors from twitter.
+                            <a href="javascript:ReverseDisplay('metrophors')">
+                                More...
+                            </a>
+
+                        <div id="metrophors" style="display:none;">
+                            <p>In June of 2012 I got curious about the fact that my hometown of Detroit used to be known
+                                as "the Paris of the Midwest". In particular I was curious about how else this <a
+                                        href="http://snowclones.org/">snowclone</a> was used. To answer that question I
+                                built <a href="http://metropho.rs"><strong>metropho.rs</strong></a> as a side project.
+                                It was a lot of fun to work on and got a nice reception from The Atlantic Monthly's <a
+                                        href="http://www.theatlanticcities.com/arts-and-lifestyle/2012/12/oakland-newark-west-coast/4150/">Atlantic
+                                    Cities Blog</a> , the <a href="http://www.meetup.com/geomeetup/events/92237942/">SFGeo
+                                    meetup</a>, and <a href="http://godeyes.cn/html/2013/01/29/google_earth_14262.html">this
+                                    Chinese Google Maps fanblog</a>. It's a <strong>Django</strong> json api consumed by
+                                a <strong>knockout</strong>/<strong>modestmaps</strong> front end. It's hosted on
+                                <strong>AWS EC2</strong> and backed by a <strong>AWS RDS</strong> db. It uses <strong>twython</strong>
+                                to troll Twitter and Yahoo's <strong>Placemaker</strong> to extract place names from
+                                tweets. I made the backing map in <strong>Tilemill</strong> and serve it with <strong>Tilestache</strong>.
+                            </p>
+                        </div>
+                        </p>
+
+                    </div>
+
+                    <div class="job">
+                        <h2><a href="https://p-seventy-two.herokuapp.com/">p-seventy-two</a></h2>
+
+                        <h4>2013</h4>
+
+                        <p>Finding a comfortable temperature in perpituity.
+                            <a href="javascript:ReverseDisplay('p72')">
+                                More...
+                            </a>
+
+                        <div id="p72" style="display:none;">
+                            <p>Built during the inaugural ThoughtWorks Harambee Hackathon in Johannesburg on an
+                                extremely comfortable day weather-wise, p-seventy-two lets a user pick a temperature and
+                                find out where they should spend each month to stay as close to that temperature as
+                                possible. It’s a <strong>rails</strong>/<strong>postgres</strong> app, hosted on
+                                <strong>heroku</strong> with a <strong>knockout</strong>/<strong>d3</strong> front end.
+                            </p>
+                        </div>
+                        </p>
+                    </div>
+
+                    <div class="job">
+                        <h2>Gap Inc. Purchase Order Management System</h2>
+
+                        <h4>2011-2013</h4>
+
+                        <p>Helping the largest specialty retailer in the US mangage Purchase Orders and save money.
+                            <a href="javascript:ReverseDisplay('scms')">
+                                More...
+                            </a>
+
+                        <div id="scms" style="display:none;">
+                            <p>We replaced a legacy app at Gap for managing Purchase Orders. Our new system removes a
+                                whole set of error prone manual copy and pasting steps and lets Gap consolidate similar
+                                orders across all their brands and international markets. The app we built was a
+                                <strong>rich javascript front end</strong> working with a <strong>Java</strong> and
+                                <strong>Mongo</strong> backend that served JSON. The front end was written with <strong>knockout.js</strong>,
+                                which allowed us to completely separate our JS from the DOM and write somewhere around
+                                900 <strong>headless jasmine</strong> specs that ran in under 70 seconds. We did data
+                                validation with a "write-once, run on either end" javascript validation engine that ran
+                                server side with <strong>Rhino</strong>. The majority of our automated testing hit the
+                                API level, where we had 900 <strong>JRuby browserless cucumber</strong> scenarios that
+                                ran in 7 minutes. All under a <strong>Jenkins</strong> setup that included one click
+                                deployment. <strong>Martin Fowler</strong> wrote up a nice presentation on the project
+                                <a href="http://martinfowler.com/articles/gap-scms-po/">here</a>.</p>
+                        </div>
+                        </p>
+                    </div>
+
+                    <div class="job last">
+                        <h2>Content Validation UI For Clinical Decision Support Provider</h2>
+
+                        <h4>2010-2011</h4>
+
+                        <p>Instantaneous feedback mechanism to let users know when they were going to fail at
+                            integration, massively reducing wasted time, effort and aggravation.
+                            <a href="javascript:ReverseDisplay('ev')">
+                                More...
+                            </a>
+
+                        <div id="ev" style="display:none;">
+                            <p>My first project at ThoughtWorks was for a client in Los Angeles that provided Clinical
+                                Decision Support (sort of like Best Practices checklists for medical conditions.) Their
+                                users were having a hard time exporting content into the myriad systems hospitals used
+                                to track and update this data. We worked with them over the course of a year to add a
+                                feature (built in <strong>javascript</strong> and <strong>ASP.net</strong>) that would
+                                alert users what data would and would not make it into their downstream system. Along
+                                the way we got them to adopt <strong>pair programming</strong>, <strong>TDD</strong>,
+                                <strong>CI</strong>, <strong>fearlessly releasing frequently</strong> and continuous
+                                <strong>refactoring</strong>. We turned an arduous, dangerous, weekend-long release
+                                process into something that was a non-event after lunch anytime it was deemed necessary.
+                                We took an app that had no tests and a six month long manual test cycle into a well
+                                covered (<strong>mstest</strong> and <strong>sahi</strong> driven through
+                                <strong>Twist</strong>), <strong>Jenkins</strong>'d source of confidence for everyone.
+                                We also managed to convince them to ditch TFS for <strong>git</strong>, which was a
+                                proud day for all involved parties. </p>
+                        </div>
+                        </p>
+                    </div>
+                </div>
+                <!--// .yui-u -->
+            </div>
+            <!--// .yui-gf -->
+
+            <div class="yui-gf">
+
+                <div class="yui-u first">
+                    <h2>Non-Coding Projects</h2>
+                </div>
+                <!--// .yui-u -->
+
+                <div class="yui-u">
+
+                    <div class="job last">
+                        <h2>ThoughtWorks Graduate Experience Lead</h2>
+
+                        <h4>2013</h4>
+
+                        <p>Introducing graduate level new hires in Johannesburg to the world of web development. 
+                         <a href="javascript:ReverseDisplay('joburg')">
+                                More...
+                            </a>
+
+                        <div id="joburg" style="display:none;">
+                            <p>I served as a trainer for six recent graduate new hires in our recently opened Johannesburg office. I designed and taught a curriculum that provided the foundation required to continue on in our ThoughtWorks University training programs. We covered Ruby, Java, Javascript, TDD, build tools, functional tests, git, github, clean code, refactoring and a sample REST web app project.</p>
+                        </div> 
+                        </p>
+                    </div>
+
+                    
+
+
+                </div>
+                <!--// .yui-u -->
+            </div>
+            <!--// .yui-gf -->
+
+                        <div class="yui-gf">
+                <div class="yui-u first">
+                    <h2>Technical</h2>
+                </div>
+                <div class="yui-u">
+                    <ul class="talent">
+                        <li><b>Languages</b></li>
+                        <li>Javascript</li>
+                        <li>Java</li>
+                        <li>Python</li>
+                        <li>C#</li>
+                        <li class="last">NetLogo</li>
+                    </ul>
+
+                    <ul class="talent">
+                        <li><b>Backend</b></li>
+                        <li>Django</li>
+                        <li>Mongo</li>
+                        <li>Guice</li>
+                        <li>Jersey</li>
+                        <li class="last">AWS/RDS/EC2</li>
+                    </ul>
+
+                    <ul class="talent">
+                    	<li><b>Frontend</b></li>
+                        <li>Knockout</li>
+                        <li>d3</li>
+                        <li>underscore</li>
+                        <li>less</li>
+                        <li class="last">jQuery</li>
+                    </ul>
+                    <ul class="talent">
+                    	<li><b>Testing</b></li>
+                        <li>xUnit</li>
+                        <li>Jasmine</li>
+                        <li>Cucumber</li>
+                        <li>Webdriver</li>
+                        <li class="last">Capybara</li>
+                    </ul>
+                    <ul class="talent">
+                    	<li><b>Geo</b></li>
+                        <li>modestmaps-js</li>
+                        <li>TileMill</li>
+                        <li>TileStache</li>
+                        <li>Wax</li>
+                        <li class="last">placemaker</li>
+                    </ul>
+                    <ul class="talent">
+                    	<li><b>Tools</b></li>
+                        <li>Git</li>
+                        <li>Jenkins</li>
+                        <li class="last">UNIX Scripting</li>
+                    </ul>
+                </div>
+            </div>
+            <!--// .yui-gf-->
+
+            <div class="yui-gf">
+
+                <div class="yui-u first">
+                    <h2>Experience</h2>
+                </div>
+                <!--// .yui-u -->
+
+                <div class="yui-u">
+
+                    <div class="job">
+                        <h2>ThoughtWorks</h2>
+
+                        <h3>Developer</h3>
+                        <h4>2010-present</h4>
+
+                    </div>
+
+                    <div class="job last">
+                        <h2>U.S. Department of State</h2>
+
+                        <h3>Consular Affairs - Executive Office Intern</h3>
+                        <h4>2009</h4>
+                    </div>
+
+
+                </div>
+                <!--// .yui-u -->
+            </div>
+            <!--// .yui-gf -->
+
+
+
+
+            <div class="yui-gf last">
+                <div class="yui-u first">
+                    <h2>Education</h2>
+                </div>
+                <div class="yui-u">
+                    <div class="job">
+                        <h2>University of Michigan - Ann Arbor, MI</h2>
+
+                        <h3>BA, Public Policy</h3>
+                        <h4>2010</h4>
+                    </div>
+                    <div class="job last">
+                        <h2>Eötvös Loránd Tudományegyetem - Budapest, Hungary</h2>
+
+                        <h3>Study Abroad</h3>
+                        <h4>2009</h4>
+                    </div>
+                </div>
+
+            </div>
+            <!--// .yui-gf -->
+
+
+        </div>
+        <!--// .yui-b -->
+    </div>
+    <!--// yui-main -->
+</div>
+<!--// bd -->
+
+<div id="ft">
+    <p>Chris Reade &mdash; <a href="mailto:creade@metropho.rs">creade@metropho.rs</a> &mdash; (248) - 914-0434</p>
+</div>
+<!--// footer -->
+
+</div>
+<!-- // inner -->
+
+
+</div>
+<!--// doc -->
+<script type="text/javascript" language="JavaScript"><!--
+function HideContent(d) {
+    document.getElementById(d).style.display = "none";
+}
+function ShowContent(d) {
+    document.getElementById(d).style.display = "block";
+}
+function ReverseDisplay(d) {
+    if (document.getElementById(d).style.display == "none") {
+        document.getElementById(d).style.display = "block";
+    }
+    else {
+        document.getElementById(d).style.display = "none";
+    }
+}
+//--></script>
+
+
+</body>
+</html>
+
