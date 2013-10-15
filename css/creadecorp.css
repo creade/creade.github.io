@@ -99,6 +99,110 @@ html,body { height: 100%; margin: 0px; padding: 0px;}
 }
 
 }
+@media (max-width: 625px){
+ .spacer{
+    height: 75%;
+}
+
+.background {
+    width: 100%;
+    height: 25%;
+
+    position:relative;
+    overflow: hidden;
+}
+
+}
+
+@media (max-width: 591px){
+ .spacer{
+    height: 77%;
+}
+
+.background {
+    width: 100%;
+    height: 23%;
+
+    position:relative;
+    overflow: hidden;
+}
+
+}
+
+@media (max-width: 591px){
+ .spacer{
+    height: 79%;
+}
+
+.background {
+    width: 100%;
+    height: 21%;
+
+    position:relative;
+    overflow: hidden;
+}
+
+}
+
+@media (max-width: 481px){
+ .spacer{
+    height: 80%;
+}
+
+.background {
+    width: 100%;
+    height: 20%;
+
+    position:relative;
+    overflow: hidden;
+}
+
+}
+
+@media (max-width: 460px){
+ .spacer{
+    height: 81%;
+}
+
+.background {
+    width: 100%;
+    height: 19%;
+
+    position:relative;
+    overflow: hidden;
+}
+
+}
+
+@media (max-width: 442px){
+ .spacer{
+    height: 82%;
+}
+
+.background {
+    width: 100%;
+    height: 18%;
+
+    position:relative;
+    overflow: hidden;
+}
+
+}
+
+@media (max-width: 412px){
+ .spacer{
+    height: 83%;
+}
+
+.background {
+    width: 100%;
+    height: 17%;
+
+    position:relative;
+    overflow: hidden;
+}
+
+}
 
 .train{
     z-index: 1000;

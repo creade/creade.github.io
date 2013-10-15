@@ -63,30 +63,30 @@
    jostle(false)
    $( window ).resize(resizeCar);
    var ground = new Motio(document.getElementById('ground'), {
-        fps: 30, // Frames per second. More fps = higher CPU load.
-        speedX: -1500 // Negative horizontal speed = panning to left.
+        fps: 30, 
+        speedX: -1500
     });
    ground.play();     
    var trees = new Motio(document.getElementById('trees'), {
-        fps: 30, // Frames per second. More fps = higher CPU load.
-        speedX: -700 // Negative horizontal speed = panning to left.
+        fps: 30,
+        speedX: -700 
     });
    trees.play();     
    var stars = new Motio(document.getElementById('large'), {
-        fps: 30, // Frames per second. More fps = higher CPU load.
-        speedX: -70 // Negative horizontal speed = panning to left.
+        fps: 15,
+        speedX: -14 
     });
    stars.play(); 
       var starsM = new Motio(document.getElementById('medium'), {
-        fps: 30, // Frames per second. More fps = higher CPU load.
-        speedX: -60 // Negative horizontal speed = panning to left.
+        fps: 15, 
+        speedX: -6
     });
    starsM.play();     
       var starsS = new Motio(document.getElementById('small'), {
-        fps: 30, // Frames per second. More fps = higher CPU load.
-        speedX: -75 // Negative horizontal speed = panning to left.
+        fps: 15, 
+        speedX: -10
     });
-   starsS.play();         
+   starsS.play();          
 
    </script>
  </body>
