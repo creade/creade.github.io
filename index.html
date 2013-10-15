@@ -1,0 +1,93 @@
+<html>
+<head>
+  <link href="css/creadecorp.css" rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+  <div id="stars">
+
+    <div id="large" class="large"></div>
+    <div id="medium" class="medium"></div>
+    <div id="small" class="small"></div>
+
+  </div>
+  <div class="spacer"></div>     
+
+  <div class = "background">
+
+    <div class="cont">
+
+      <div class="train">
+
+        <img class="car" src="img/painted_car_port.png">
+        <img class="car" src="img/painted_car_con.png">
+        <img class="car" src="img/engine_black_blog.png">
+
+      </div>
+
+    </div>
+
+    <div id="ground" class="ground"></div>
+
+    <div id="trees" class="trees"></div>
+
+
+  </div>
+
+
+
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+  <script src="js/motio.min.js"></script>
+
+
+
+  <script type="text/javascript">
+    var resizeCar = function(){
+        var carHeight = $(".car").height();
+        $(".car").width(carHeight);
+    }
+    resizeCar();
+
+    var jostle = function(hundred){
+       $(".cont").animate({
+        'width': hundred ? "100%" : "101%"
+    },
+    {
+        complete: function(){
+            jostle(!hundred);
+        }
+    })
+   }
+
+   jostle(false)
+   $( window ).resize(resizeCar);
+   var ground = new Motio(document.getElementById('ground'), {
+        fps: 30, // Frames per second. More fps = higher CPU load.
+        speedX: -1500 // Negative horizontal speed = panning to left.
+    });
+   ground.play();     
+   var trees = new Motio(document.getElementById('trees'), {
+        fps: 30, // Frames per second. More fps = higher CPU load.
+        speedX: -700 // Negative horizontal speed = panning to left.
+    });
+   trees.play();     
+   var stars = new Motio(document.getElementById('large'), {
+        fps: 30, // Frames per second. More fps = higher CPU load.
+        speedX: -70 // Negative horizontal speed = panning to left.
+    });
+   stars.play(); 
+      var starsM = new Motio(document.getElementById('medium'), {
+        fps: 30, // Frames per second. More fps = higher CPU load.
+        speedX: -60 // Negative horizontal speed = panning to left.
+    });
+   starsM.play();     
+      var starsS = new Motio(document.getElementById('small'), {
+        fps: 30, // Frames per second. More fps = higher CPU load.
+        speedX: -75 // Negative horizontal speed = panning to left.
+    });
+   starsS.play();         
+
+   </script>
+ </body>
+ </html>

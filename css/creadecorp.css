@@ -1,0 +1,161 @@
+html,body { height: 100%; margin: 0px; padding: 0px;}
+
+.ground { 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url('../img/bg_ground.png');
+    background-repeat: repeat-x;
+    background-size: contain;
+}
+
+.trees { 
+    width: 100%; 
+    position: absolute;
+    height: 100%;
+    background: url('../img/bg_trees.png');
+    background-repeat: repeat-x;
+    background-size: contain;
+    
+}
+.trees_far { 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url('../img/bg_trees_far.png');
+    background-repeat: repeat-x;
+    background-size: contain;
+}
+
+.spacer{
+    background:url("../img/title.png") no-repeat center center;
+    background-size: contain;
+    height: 53%;
+}
+
+.car {
+    margin-left: -7px;
+}
+
+.background {
+    width: 100%;
+    height: 47%;
+    position:relative;
+    overflow: hidden;
+}
+
+@media (max-width: 1105px){
+ .spacer{
+    height: 60%;
+}
+
+.background {
+    width: 100%;
+    height: 40%;
+    position:relative;
+    overflow: hidden;
+}
+
+}
+
+@media (max-width: 945px){
+ .spacer{
+    height: 65%;
+}
+
+.background {
+    width: 100%;
+    height: 35%;
+    position:relative;
+    overflow: hidden;
+}
+
+}
+
+@media (max-width: 826px){
+ .spacer{
+    height: 70%;
+}
+
+.background {
+    width: 100%;
+    height: 30%;
+    position:relative;
+    overflow: hidden;
+}
+
+}
+@media (max-width: 710px){
+ .spacer{
+    height: 73%;
+}
+
+.background {
+    width: 100%;
+    height: 27%;
+
+    position:relative;
+    overflow: hidden;
+}
+
+}
+
+.train{
+    z-index: 1000;
+    text-align: center;
+}
+.train img{
+    z-index: 1000;
+    display: inline-block;
+    height: 100%;
+    width:346px;
+}
+
+.cont{
+    z-index: 1000;
+    width: 100%;
+    position: absolute;
+}
+
+
+#stars {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1000;
+    /* The dark blue to slightly-less-dark blue gradient */
+    background-color: #032a54;
+    background-repeat: repeat-x;
+    background-image: -khtml-gradient(linear, left top, left bottom, from(#011428), to(#032a54));
+    background-image: -moz-linear-gradient(top, #011428, #032a54);
+    background-image: -ms-linear-gradient(top, #011428, #032a54);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #011428), color-stop(100%, #032a54));
+    background-image: -webkit-linear-gradient(top, #011428, #032a54);
+    background-image: -o-linear-gradient(top, #011428, #032a54);
+    background-image: linear-gradient(top, #011428, #032a54);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#011428', endColorstr='#032a54', GradientType=0);
+    margin-bottom: 10px;
+}
+
+#stars div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#stars .large {
+    background: url('../img/stars_large.png');
+}
+
+#stars .medium {
+    background: url('../img/stars_medium.png');
+}
+
+#stars .small {
+    background: url('../img/stars_small.png');
+}
+
+
+
+
+
