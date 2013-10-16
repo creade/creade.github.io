@@ -1,6 +1,7 @@
 <html>
 <head>
   <link href="css/creadecorp.css" rel='stylesheet' type='text/css'>
+  <title>creade.github.io</title>
 </head>
 <body>
 
@@ -62,6 +63,7 @@
    }
 
    jostle(false)
+   
    $( window ).resize(resizeCar);
    var ground = new Motio(document.getElementById('ground'), {
         fps: 30, 
@@ -74,17 +76,17 @@
     });
    trees.play();     
    var stars = new Motio(document.getElementById('large'), {
-        fps: 15,
+        fps: 25,
         speedX: -14 
     });
    stars.play(); 
       var starsM = new Motio(document.getElementById('medium'), {
-        fps: 15, 
+        fps: 25, 
         speedX: -6
     });
    starsM.play();     
       var starsS = new Motio(document.getElementById('small'), {
-        fps: 15, 
+        fps: 25, 
         speedX: -10
     });
    starsS.play();          

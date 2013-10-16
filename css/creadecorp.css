@@ -34,6 +34,7 @@ html,body { height: 100%; margin: 0px; padding: 0px;}
 }
 
 .car {
+
     margin-left: -7px;
 }
 
@@ -43,6 +44,8 @@ html,body { height: 100%; margin: 0px; padding: 0px;}
     position:relative;
     overflow: hidden;
 }
+
+
 
 @media (max-width: 1105px){
  .spacer{
@@ -208,6 +211,7 @@ html,body { height: 100%; margin: 0px; padding: 0px;}
 
 .train{
     z-index: 1000;
+    height: 100%;
     text-align: center;
 }
 .train img{
@@ -218,6 +222,7 @@ html,body { height: 100%; margin: 0px; padding: 0px;}
 }
 
 .cont{
+    height: 100%;
     z-index: 1000;
     width: 100%;
     position: absolute;
