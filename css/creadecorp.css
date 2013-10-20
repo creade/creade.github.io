@@ -1,4 +1,4 @@
-html,body { height: 100%; margin: 0px; padding: 0px;}
+html,body { height: 100%; margin: 0px; padding: 0px; overflow: hidden;}
 
 .ground { 
     width: 100%;
@@ -266,7 +266,39 @@ html,body { height: 100%; margin: 0px; padding: 0px;}
     background: url('../img/stars_small.png');
 }
 
+.contact {
+    width: 100%;
+    height: 45%;
+    position: absolute;
+    top: 100%;
+}
 
 
+.contacts{
+    z-index: 1000;
+    height: 100%;
+    text-align: center;
+}
+.contacts div{
+    z-index: 1000;
+    display: inline-block;
+    height: 100%;
+    width: 25%;
+}
+
+.twitter_logo {
+    background: url("../img/twitter.png") no-repeat center center;
+    background-size: contain;
+}
+
+.github_logo {
+    background: url("../img/OctocatMoon.png") no-repeat center center;
+    background-size: contain;   
+}
+
+.email {
+    background: url("../img/envelope.png") no-repeat center center;
+    background-size: contain;   
+}
 
 

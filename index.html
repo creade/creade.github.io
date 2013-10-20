@@ -4,7 +4,16 @@
   <title>creade.github.io</title>
 </head>
 <body>
+  <div class="contact">
 
+    
+    <div class="contacts">
+      <a href="http://twitter.com/CWReade"><div class="twitter_logo"></div></a>
+      <a href="http://github.com/creade"><div class="github_logo"></div></a>
+      <a href="mailto:creade@metropho.rs"><div class="email"></div></a>
+
+    </div>
+  </div>
   <div id="stars">
 
     <div id="large" class="large"></div>
@@ -12,59 +21,63 @@
     <div id="small" class="small"></div>
 
   </div>
-  <div class="spacer"></div>     
+  <div class="spacer">
+  </div>
+</div>     
 
-  <div class = "background">
+<div class = "background">
 
-    <div class="cont">
+  <div class="cont">
 
-      <div class="train">
+    <div class="train">
 
-        <img class="car" src="img/painted_car_work.png">
-        <img class="car" src="img/painted_car_con.png">
-        <img class="car" src="img/engine_black_blog.png">
-
-      </div>
+      <a href="resume.html"><img class="car" src="img/painted_car_work.png"></a>
+      <img class="car" src="img/painted_car_con.png" onclick="toggleContacts()">
+      <a><img class="car" src="img/engine_black_blog.png"></a>
 
     </div>
 
-    <div id="ground" class="ground"></div>
-
-    <div id="trees" class="trees"></div>
-
-
   </div>
 
+  <div id="ground" class="ground"></div>
+
+  <div id="trees" class="trees"></div>
+
+
+</div>
 
 
 
-  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-  <script src="js/motio.min.js"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+<script src="js/motio.min.js"></script>
 
 
 
-  <script type="text/javascript">
-    var resizeCar = function(){
-        var carHeight = $(".car").height();
-        $(".car").width(carHeight);
-    }
-    resizeCar();
+<script type="text/javascript">
+$(document).ready(function(){
+  var resizeCar = function(){
+    var carHeight = $(".car").height();
+    $(".car").width(carHeight);
+  }
+  resizeCar();
 
-    var jostle = function(hundred){
-       $(".cont").animate({
-        'width': hundred ? "100%" : "101%"
+  var jostle = function(hundred){
+   $(".cont").animate({
+    'width': hundred ? "100%" : "101%"
+  },
+  {
+    complete: function(){
+      jostle(!hundred);
     },
-    {
-        complete: function(){
-            jostle(!hundred);
-        },
-        duration: "slow"
-    })
-   }
+    duration: "slow"
+  })
+ }
+ $( window ).resize(resizeCar);
+   jostle(false);
 
-   jostle(false)
    
-   $( window ).resize(resizeCar);
+
    var ground = new Motio(document.getElementById('ground'), {
         fps: 30, 
         speedX: -1500
@@ -72,7 +85,7 @@
    ground.play();     
    var trees = new Motio(document.getElementById('trees'), {
         fps: 30,
-        speedX: -700 
+        speedX: -400 
     });
    trees.play();     
    var stars = new Motio(document.getElementById('large'), {
@@ -89,8 +102,60 @@
         fps: 25, 
         speedX: -10
     });
-   starsS.play();          
+   starsS.play();   
+ });       
 
-   </script>
- </body>
- </html>
+var showingContacts = false;
+
+var toggleContacts = function(){
+  if (showingContacts) {
+    contactSwapOut();
+    showingContacts = false;
+  } else {
+    contactSwapIn();
+    showingContacts = true;
+  }
+
+}
+
+var contactSwapIn  = function(){
+   $(".contact").animate({
+      'top': "10%"
+    },
+{
+  queue: false,
+  duration: "slow"
+})
+ $(".spacer").animate({
+  'opacity': "0"
+},
+{
+  queue: false,
+  complete: function(){
+      $(".contact").css('z-index',1000);
+    },
+  duration: "slow"
+})
+}
+
+var contactSwapOut =function(){
+$(".contact").css('z-index',0);
+ $(".contact").animate({
+  'top': "100%"
+},
+{
+  queue: false,
+  duration: "slow"
+})
+ $(".spacer").animate({
+  'opacity': "1"
+},
+{
+  queue: false,
+  duration: "slow"
+})
+}
+
+</script>
+</body>
+</html>
