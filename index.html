@@ -6,7 +6,7 @@
 <body>
   <div class="contact">
 
-    
+
     <div class="contacts">
       <a href="http://twitter.com/CWReade"><div class="twitter_logo"></div></a>
       <a href="http://github.com/creade"><div class="github_logo"></div></a>
@@ -23,7 +23,7 @@
   </div>
   <div class="spacer">
   </div>
-</div>     
+</div>
 
 <div class = "background">
 
@@ -31,9 +31,9 @@
 
     <div class="train">
 
-      <a href="resume.html"><img class="car" src="img/painted_car_work.png"></a>
-      <img class="car" src="img/painted_car_con.png" onclick="toggleContacts()">
-      <a href="http://cwreade.com"><img class="car" src="img/engine_black_blog.png"></a>
+      <a href="resume.html"><img class="car" src="img/resume_car.png"></a>
+      <img class="car" src="img/contact_car.png" onclick="toggleContacts()">
+      <img class="car" src="img/engine_black.png">
 
     </div>
 
@@ -76,34 +76,34 @@ $(document).ready(function(){
  $( window ).resize(resizeCar);
    jostle(false);
 
-   
+
 
    var ground = new Motio(document.getElementById('ground'), {
-        fps: 30, 
+        fps: 30,
         speedX: -1500
     });
-   ground.play();     
+   ground.play();
    var trees = new Motio(document.getElementById('trees'), {
         fps: 30,
-        speedX: -400 
+        speedX: -400
     });
-   trees.play();     
+   trees.play();
    var stars = new Motio(document.getElementById('large'), {
         fps: 25,
-        speedX: -14 
+        speedX: -14
     });
-   stars.play(); 
+   stars.play();
       var starsM = new Motio(document.getElementById('medium'), {
-        fps: 25, 
+        fps: 25,
         speedX: -6
     });
-   starsM.play();     
+   starsM.play();
       var starsS = new Motio(document.getElementById('small'), {
-        fps: 25, 
+        fps: 25,
         speedX: -10
     });
-   starsS.play();   
- });       
+   starsS.play();
+ });
 
 var showingContacts = false;
 
